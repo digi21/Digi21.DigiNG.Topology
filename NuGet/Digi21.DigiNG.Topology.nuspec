@@ -15,7 +15,7 @@
 A Digi3D.NET license is required to run applications that use the assemblies published by this package. Rent a license at https://www.digi21.net/Tienda/Alquiler or buy a license at https://www.digi21.net/Tienda/Compra</description>
     <summary>This package contains runtime assemblies for geometric and topological analysis with Digi3D.NET.</summary>
     <releaseNotes>Please visit https://www.digi21.net/Digi3D/Download to read the release notes.</releaseNotes>
-    <copyright>(c) 2000-2018 Dreaming With Objects S.L.</copyright>
+    <copyright>(c) 2000-2019 Dreaming With Objects S.L.</copyright>
     <language>en-US</language>
     <tags>Digi3D Digi3D.NET Digi21 Digi DigiNG Topology</tags>
     <dependencies>
