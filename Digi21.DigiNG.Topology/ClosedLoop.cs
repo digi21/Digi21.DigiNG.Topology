@@ -6,9 +6,9 @@ namespace Digi21.DigiNG.Topology
 {
     public class ClosedLoop
     {
-        public ClosedLoop() { throw null; }
-        public Polygon Polygon { get; }
-        public ReadOnlyText Centroid { get; }
-        public List<Tuple<ReadOnlyLine, bool>> Entities { get; }
+        public ClosedLoop() => throw null;
+        public Polygon Polygon => throw null;
+        public ReadOnlyText Centroid => throw null;
+        public List<Tuple<ReadOnlyLine, bool>> Entities => throw null;
     }
 }
