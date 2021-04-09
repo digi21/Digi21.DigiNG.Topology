@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCompany("Dreaming With Objects S.L.")]
 [assembly: AssemblyProduct("Digi3D.NET")]
 [assembly: AssemblyCopyright("Copyright (c) 2010-2019 Digi21.net")]
-[assembly: AssemblyTrademark("(c) 2010-2019 José Ángel Martínez Torres")]
+[assembly: AssemblyTrademark("(c) 2010-2021 José Ángel Martínez Torres")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -33,5 +33,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("17.2.0.0")]
+[assembly: AssemblyVersion("21.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
