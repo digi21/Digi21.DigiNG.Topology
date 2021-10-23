@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Digi21.DigiNG.Topology</id>
-    <version>21.0.0</version>
+    <version>22.0.0</version>
     <title>Digi21.DigiNG.Topology</title>
     <authors>José Ángel Martínez Torres</authors>
     <owners>Dreaming With Objects SL</owners>
@@ -21,7 +21,7 @@ A Digi3D.NET license is required to run applications that use the assemblies pub
     <tags>Digi3D Digi3D.NET Digi21 Digi DigiNG Topology</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.6">
-        <dependency id="Digi21.DigiNG" version="21.0.0" />
+        <dependency id="Digi21.DigiNG" version="22.0.0" />
       </group>
     </dependencies>
   </metadata>
