@@ -1,33 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
-  <metadata>
-    <id>Digi21.DigiNG.Topology</id>
-    <version>22.3.0</version>
-    <title>Digi21.DigiNG.Topology</title>
-    <authors>José Ángel Martínez Torres</authors>
-    <owners>Dreaming With Objects SL</owners>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <license type="expression">MIT</license>
-    <icon>IconoDigi21.png</icon>
-    <projectUrl>http://digi3d.net/</projectUrl>
-    <repository type="git" url="https://github.com/digi21/Digi21.DigiNG.Topology.git" branch="master" commit="8a2d7a55087e94ed6727d6ef6efc84da3899b4c9"/>
-    <description>This package contains runtime assemblies for geometric and topological analysis with Digi3D.NET.
+	<metadata>
+		<id>Digi21.DigiNG.Topology</id>
+		<version>24.0.0</version>
+		<title>Digi21.DigiNG.Topology</title>
+		<authors>José Ángel Martínez Torres</authors>
+		<owners></owners>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<icon>IconoDigi21.png</icon>
+		<projectUrl>https://digi3d.net/</projectUrl>
+		<description>
+			This package contains runtime assemblies for geometric and topological analysis with Digi3D.NET.
 
-A Digi3D.NET license is required to run applications that use the assemblies published by this package. Rent a license at https://www.digi21.net/Tienda/Alquiler or buy a license at https://www.digi21.net/Tienda/Compra</description>
-    <summary>This package contains runtime assemblies for geometric and topological analysis with Digi3D.NET.</summary>
-    <releaseNotes>Please visit https://www.digi21.net/Digi3D/Download to read the release notes.</releaseNotes>
-    <copyright>(c) 2000-2022 Dreaming With Objects S.L.</copyright>
-    <language>en-US</language>
-    <tags>Digi3D Digi3D.NET Digi21 Digi DigiNG Topology</tags>
-    <dependencies>
-      <group targetFramework=".NETFramework4.6">
-        <dependency id="Digi21.DigiNG" version="22.3.0" />
-      </group>
-    </dependencies>
-  </metadata>
-  <files>
-    <file src="..\Digi21.DigiNG.Topology\bin\Release\ref\Digi21.DigiNG.Topology.dll" target="lib\net46\Digi21.DigiNG.Topology.dll" />
-    <file src="install.ps1" target="tools\install.ps1" />
-    <file src="IconoDigi21.png" target="IconoDigi21.png" />
-  </files>
+			A Digi3D.NET license is required to run applications that use the assemblies published by this package. Rent a license at https://www.digi21.net/Tienda/Alquiler or buy a license at https://www.digi21.net/Tienda/Compra
+		</description>
+		<copyright>(c) 2000-2024 Dreaming With Objects S.L.</copyright>
+		<tags>Digi3D Digi3D.NET Digi21 Digi DigiNG Topology</tags>
+		<repository type="git" url="https://github.com/digi21/Digi21.DigiNG.Topology.git" commit="6d84e88acb75b36c6a735b44f4b2f304c74e2c43" />
+		<dependencies>
+			<group targetFramework="net8.0">
+				<dependency id="Digi21.DigiNG" version="24.0.0" exclude="Build,Analyzers" />
+				<dependency id="Microsoft.CSharp" version="4.7.0" exclude="Build,Analyzers" />
+				<dependency id="System.Data.DataSetExtensions" version="4.5.0" exclude="Build,Analyzers" />
+			</group>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="..\Digi21.DigiNG.Topology\obj\Release\net8.0\ref\Digi21.DigiNG.Topology.dll" target="ref\net8.0\Digi21.DigiNG.Topology.dll" />
+		<file src="IconoDigi21.png" target="IconoDigi21.png" />
+	</files>
 </package>
