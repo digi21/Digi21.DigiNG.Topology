@@ -26,5 +26,10 @@
 	<files>
 		<file src="..\Digi21.DigiNG.Topology\obj\Release\net8.0\ref\Digi21.DigiNG.Topology.dll" target="ref\net8.0\Digi21.DigiNG.Topology.dll" />
 		<file src="IconoDigi21.png" target="IconoDigi21.png" />
+		<file src="Digi21.DigiNG.Topology.targets" target="build\Digi21.DigiNG.Topology.targets" />
+		<file src="C:\Users\josea\source\repos\AddRuntimeToDepsJson\AddRuntimeToDepsJson\bin\Release\net8.0\AddRuntimeToDepsJson.deps.json" target="build\AddRuntimeToDepsJson.deps.json" />
+		<file src="C:\Users\josea\source\repos\AddRuntimeToDepsJson\AddRuntimeToDepsJson\bin\Release\net8.0\AddRuntimeToDepsJson.dll" target="build\AddRuntimeToDepsJson.dll" />
+		<file src="C:\Users\josea\source\repos\AddRuntimeToDepsJson\AddRuntimeToDepsJson\bin\Release\net8.0\AddRuntimeToDepsJson.exe" target="build\AddRuntimeToDepsJson.exe" />
+		<file src="C:\Users\josea\source\repos\AddRuntimeToDepsJson\AddRuntimeToDepsJson\bin\Release\net8.0\AddRuntimeToDepsJson.runtimeconfig.json" target="build\AddRuntimeToDepsJson.runtimeconfig.json" />
 	</files>
 </package>
