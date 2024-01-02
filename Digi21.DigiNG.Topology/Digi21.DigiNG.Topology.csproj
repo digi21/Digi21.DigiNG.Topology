@@ -21,7 +21,7 @@ A Digi3D.NET license is required to run applications that use the assemblies pub
     <Copyright>(c) 2000-2024 Dreaming With Objects S.L.</Copyright>
     <AssemblyVersion>24.0.0.0</AssemblyVersion>
     <FileVersion>3.0.0.0</FileVersion>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <Title>$(AssemblyName)</Title>
     <Version>24.0.0</Version>
     <Authors>José Ángel Martínez Torres</Authors>
