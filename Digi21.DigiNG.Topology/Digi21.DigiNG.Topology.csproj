@@ -31,6 +31,12 @@ A Digi3D.NET license is required to run applications that use the assemblies pub
     <RepositoryType>git</RepositoryType>
     <PackageTags>Digi3D Digi3D.NET Digi21 Digi DigiNG Topology</PackageTags>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;67</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;67</NoWarn>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Digi21.DigiNG" Version="24.0.0" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
