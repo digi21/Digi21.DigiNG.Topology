@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
 	<metadata>
 		<id>Digi21.DigiNG.Topology</id>
 		<version>24.0.0</version>
@@ -7,16 +7,17 @@
 		<authors>José Ángel Martínez Torres</authors>
 		<owners></owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<license type="expression">MIT</license>
+		<readme>README.md</readme>
 		<icon>IconoDigi21.png</icon>
 		<projectUrl>https://digi3d.net/</projectUrl>
-		<description>
-			This package contains runtime assemblies for geometric and topological analysis with Digi3D.NET.
+		<description>This package contains a reference assembly with types for geometric and topological analysis with Digi3D.NET.
 
-			A Digi3D.NET license is required to run applications that use the assemblies published by this package. Rent a license at https://www.digi21.net/Tienda/Alquiler or buy a license at https://www.digi21.net/Tienda/Compra
+A Digi3D.NET license is required to run applications that use the assemblies published by this package. Rent a license at https://www.digi21.net/Tienda/Alquiler or buy a license at https://www.digi21.net/Tienda/Compra
 		</description>
 		<copyright>(c) 2000-2024 Dreaming With Objects S.L.</copyright>
 		<tags>Digi3D Digi3D.NET Digi21 Digi DigiNG Topology</tags>
-		<repository type="git" url="https://github.com/digi21/Digi21.DigiNG.Topology.git" commit="6d84e88acb75b36c6a735b44f4b2f304c74e2c43" />
+		<repository type="git" url="https://github.com/digi21/Digi21.DigiNG.Topology.git"/>
 		<dependencies>
 			<group targetFramework="net8.0">
 				<dependency id="Digi21.DigiNG" version="24.0.0" />
@@ -24,6 +25,7 @@
 		</dependencies>
 	</metadata>
 	<files>
+		<file src="README.md" target="README.md" />
 		<file src="..\Digi21.DigiNG.Topology\obj\Release\net8.0\ref\Digi21.DigiNG.Topology.dll" target="ref\net8.0\Digi21.DigiNG.Topology.dll" />
 		<file src="IconoDigi21.png" target="IconoDigi21.png" />
 		<file src="Digi21.DigiNG.Topology.targets" target="build\Digi21.DigiNG.Topology.targets" />
