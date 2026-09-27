@@ -1,0 +1,59 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+jobs:
+  publish:
+    runs-on: windows-latest
+    permissions:
+      contents: write # the GitHub release
+      id-token: write # the OIDC token trusted publishing exchanges for a temporary NuGet key
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      # The package version is written in the nuspec; the tag has to name the same version.
+      - name: Check tag against nuspec version
+        run: |
+          [xml]$nuspec = Get-Content 'NuGet/Digi21.DigiNG.Topology.nuspec'
+          $version = $nuspec.package.metadata.version
+          if ('${{ github.ref_name }}' -ne "v$version") { throw "tag ${{ github.ref_name }} does not match nuspec version $version" }
+
+      - name: Build
+        run: dotnet build Digi21.DigiNG.Topology/Digi21.DigiNG.Topology.csproj -c Release
+
+      - name: Pack
+        run: dotnet pack Digi21.DigiNG.Topology/Digi21.DigiNG.Topology.csproj -c Release --no-build -o artifacts -p:NuspecFile=../NuGet/Digi21.DigiNG.Topology.nuspec -p:NuspecBasePath=../NuGet
+
+      # Trusted publishing: nuget.org exchanges this job's OIDC token for an API key that lasts an
+      # hour and is good for one push, so there is no long-lived secret to store or rotate.
+      - name: NuGet login
+        uses: NuGet/login@v1
+        id: login
+        with:
+          user: ${{ secrets.NUGET_USER }} # the nuget.org profile name, not the email address
+
+      # `dotnet nuget push` on Windows only expands a wildcard written with backslashes; pushing each
+      # file by full path avoids the wildcard.
+      - name: Push to NuGet.org
+        run: |
+          $packages = @(Get-ChildItem artifacts\*.nupkg)
+          if ($packages.Count -eq 0) { throw "no .nupkg in artifacts - the pack step produced nothing" }
+          foreach ($package in $packages) {
+            Write-Host "pushing $($package.Name)"
+            dotnet nuget push $package.FullName --api-key ${{ steps.login.outputs.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
+            if ($LASTEXITCODE -ne 0) { throw "push failed for $($package.Name)" }
+          }
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: artifacts/*.nupkg
+          generate_release_notes: true

@@ -11,7 +11,9 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>certificadoSxsDigi21.pfx</AssemblyOriginatorKeyFile>
+    <!-- Public key only: reference assemblies need the Digi21 identity, not a real signature. -->
+    <AssemblyOriginatorKeyFile>..\Digi21.PublicKey.snk</AssemblyOriginatorKeyFile>
+    <PublicSign>true</PublicSign>
     <AssemblyTitle>Digi21.DigiNG.Topology</AssemblyTitle>
     <Description>This package contains runtime assemblies for geometric and topological analysis with Digi3D.AI.
 
