@@ -40,7 +40,7 @@ A Digi3D.AI license is required to run applications that use the assemblies publ
     <NoWarn>1701;1702;67</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Digi21.DigiNG" Version="26.0.0" ExcludeAssets="contentFiles" />
+    <PackageReference Include="Digi21.DigiNG" Version="26.0.0" ExcludeAssets="buildTransitive" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
   </ItemGroup>
   <ItemGroup>
