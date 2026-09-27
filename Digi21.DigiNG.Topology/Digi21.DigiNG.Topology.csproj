@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <OutputType>Library</OutputType>
     <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
   </PropertyGroup>
@@ -13,23 +13,23 @@
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>certificadoSxsDigi21.pfx</AssemblyOriginatorKeyFile>
     <AssemblyTitle>Digi21.DigiNG.Topology</AssemblyTitle>
-    <Description>This package contains runtime assemblies for geometric and topological analysis with Digi3D.NET.
+    <Description>This package contains runtime assemblies for geometric and topological analysis with Digi3D.AI.
 
-A Digi3D.NET license is required to run applications that use the assemblies published by this package. Rent a license at https://www.digi21.net/Tienda/Alquiler or buy a license at https://www.digi21.net/Tienda/Compra</Description>
+A Digi3D.AI license is required to run applications that use the assemblies published by this package. Rent a license at https://www.digi21.net/Tienda/Alquiler or buy a license at https://www.digi21.net/Tienda/Compra</Description>
     <Company>Dreaming With Objects S.L.</Company>
-    <Product>Digi3D.NET</Product>
-    <Copyright>(c) 2000-2024 Dreaming With Objects S.L.</Copyright>
-    <AssemblyVersion>24.0.0.0</AssemblyVersion>
-    <FileVersion>3.0.0.0</FileVersion>
+    <Product>Digi3D.AI</Product>
+    <Copyright>(c) 2000-2026 Dreaming With Objects S.L.</Copyright>
+    <AssemblyVersion>26.0.0.0</AssemblyVersion>
+    <FileVersion>26.0.0.0</FileVersion>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <Title>$(AssemblyName)</Title>
-    <Version>24.0.0</Version>
+    <Version>26.0.0</Version>
     <Authors>José Ángel Martínez Torres</Authors>
     <PackageProjectUrl>https://digi3d.net</PackageProjectUrl>
     <PackageIcon>IconoDigi21.png</PackageIcon>
     <RepositoryUrl>https://github.com/digi21/Digi21.DigiNG.Topology.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>Digi3D Digi3D.NET Digi21 Digi DigiNG Topology</PackageTags>
+    <PackageTags>Digi3D Digi3D.AI Digi21 Digi DigiNG Topology</PackageTags>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <NoWarn>1701;1702;67</NoWarn>
@@ -38,8 +38,7 @@ A Digi3D.NET license is required to run applications that use the assemblies pub
     <NoWarn>1701;1702;67</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Digi21.DigiNG" Version="24.0.0" />
-    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Digi21.DigiNG" Version="26.0.0" ExcludeAssets="contentFiles" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
   </ItemGroup>
   <ItemGroup>
