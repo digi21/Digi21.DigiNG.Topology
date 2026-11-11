@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
 	<metadata>
 		<id>Digi21.DigiNG.Topology</id>
-		<version>26.0.0</version>
+		<version>26.1.0</version>
 		<title>Digi21.DigiNG.Topology</title>
 		<authors>José Ángel Martínez Torres</authors>
 		<owners></owners>
